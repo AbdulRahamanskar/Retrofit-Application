@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:elevation="5dp"
+    app:cardCornerRadius="20dp"
+    android:layout_margin="9dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+    <com.google.android.material.imageview.ShapeableImageView
+       android:layout_marginTop="18dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/shapableimg"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_launcher_background"
+        app:shapeAppearanceOverlay="@style/softCorner"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvproduct"
+        android:text="Brand"
+        android:drawableTint="#FFC107"
+        android:textSize="15dp"
+        android:fontFamily="sans-serif-black"
+        android:layout_marginLeft="10dp"
+        android:gravity="center"
+        app:drawableLeftCompat="@drawable/products"
+        android:drawablePadding="5dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvproductstatus"
+            android:text="Staus"
+            android:drawableTint="#7CFFC107"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"
+            android:fontFamily="sans-serif"
+            app:drawableLeftCompat="@drawable/inventory"
+            android:drawablePadding="5dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvproductprice"
+                android:text="Price: "
+                android:drawableLeft="@color/material_dynamic_neutral90"
+                android:textSize="20sp"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="sans-serif-black"
+                app:drawableLeftCompat="@drawable/dollar"
+                android:drawablePadding="5dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvproductdiscount"
+                android:text="Discount "
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:drawableTint="#FFC107"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="sans-serif-black"
+                app:drawableLeftCompat="@drawable/discount"
+                android:drawablePadding="5dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvproductrating"
+                android:text="Rating "
+                android:drawableLeft="@color/material_dynamic_neutral90"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="sans-serif-black"
+                app:drawableLeftCompat="@drawable/star"
+                android:drawablePadding="5dp"/>
+
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
